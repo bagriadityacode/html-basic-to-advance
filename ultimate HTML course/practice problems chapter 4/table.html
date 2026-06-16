@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cricket table score</title>
+    <style>/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    
+    /* greenish background */
+    background: linear-gradient(135deg, #0f2027, #1f6b52, #3ca55c);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+
+    overflow-x: hidden;
+}
+
+/* table animation */
+table {
+    width: 700px;
+    border-collapse: collapse;
+
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(10px);
+
+    border-radius: 18px;
+    overflow: hidden;
+
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+
+    animation: tableEntry 1.2s ease;
+}
+
+/* heading row */
+thead tr {
+    background: rgba(0, 0, 0, 0.25);
+}
+
+/* table headings */
+th {
+    padding: 18px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+    transition: 0.3s;
+}
+
+/* body rows hover */
+tbody tr {
+    transition: 0.4s ease;
+}
+
+/* row hover effect */
+tbody tr:hover {
+    background: rgba(255, 255, 255, 0.15);
+
+    transform: scale(1.02);
+}
+
+/* glowing hover on text */
+tbody tr:hover th {
+    color: #d4ffdc;
+    text-shadow: 0 0 10px #9cffb1;
+}
+
+/* alternate rows */
+tbody tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* animation */
+@keyframes tableEntry {
+    0% {
+        opacity: 0;
+        transform: translateY(-80px) scale(0.8);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translateY(15px) scale(1.03);
+    }
+
+    100% {
+        transform: translateY(0) scale(1);
+    }
+}</style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th> players</th>
+                <th>M</th>
+                <th>avg</th>
+                <th>Run</th>
+            </tr>
+            <tbody>
+                <tr>
+                    <th>S.Sudharsan</th>
+                    <th>15</th>
+                    <th>46.57</th>
+                    <th>652</th>
+                </tr>
+                <tr>
+                    <th>S.Gill</th>
+                    <th>14</th>
+                    <th>44.14</th>
+                    <th>618</th>
+                </tr>
+                <tr>
+                    <th>H.kilaasen</th>
+                    <th>14</th>
+                    <th>50.50</th>
+                    <th>606</th>
+
+                </tr>
+                <tr>
+                    <th>Kohli</th>
+                    <th>15.00</th>
+                    <th>50.00</th>
+                    <th>600</th>
+
+                </tr>
+                <tr>
+                    <th>Kl Rahul</th>
+                    <th>14</th>
+                    <th>45.62</th>
+                    <th>599</th>
+                </tr>
+                
+            </tbody>
+        </thead>
+    </table>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tables</title>
+    <style>
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    background: #fff0f6;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(255, 105, 180, 0.2);
+  }
+
+  thead {
+    background: linear-gradient(90deg, #ff69b4, #ff85c1);
+    color: white;
+  }
+
+  th, td {
+    padding: 14px 18px;
+    text-align: left;
+    border: 2px solid #070707f5;
+  }
+
+  th {
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: #ffe4ec;
+  }
+
+  tbody tr:hover {
+    background-color: #ffd1e3;
+    transition: 0.3s ease;
+  }
+
+  td {
+    color: #7a2954;
+    font-size: 14px;
+  }
+
+  caption {
+    caption-side: top;
+    padding: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #d63384;
+  }
+</style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Role</th>
+            <th>sallery</th>
+        </tr>
+
+        <tbody>
+            <tr>
+                <td>Aditya</td>
+                <td>full-stack developer</td>
+                <td>$7998</td>
+            </tr>
+            <tr>
+                <td>Ayush</td>
+                <td>sbi clerk</td>
+                <td>$980</td>
+            </tr>
+            <tr>
+                <td>Aman</td>
+                <td>developer</td>
+                <td>$798</td>
+            </tr>
+            <tr>
+                <td>Samay</td>
+                <td>cook</td>
+                <td>$98</td>
+            </tr>
+            <tr>
+               <td colspan="1"> Thanks</td> 
+               <td colspan="2">hi</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

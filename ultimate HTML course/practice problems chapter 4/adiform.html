@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta id="viewport" content="width=device-width, initial-scale=1.0">
+    <title>travel booking</title>
+    <style>* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #e9d5ff, #f3e8ff);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: auto;
+}
+
+form {
+    background-color: white;
+    padding: 30px;
+    width: 420px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 25px rgba(128, 90, 213, 0.3);
+
+    animation: floatDown 1.2s ease;
+}
+
+@keyframes floatDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-250px);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translateY(20px);
+    }
+
+    80% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #6b21a8;
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+div {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #4c1d95;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #c084fc;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #7e22ce;
+    box-shadow: 0px 0px 8px rgba(126, 34, 206, 0.4);
+}
+
+input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #9333ea, #7e22ce);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.03);
+    background: linear-gradient(to right, #7e22ce, #6b21a8);
+}
+
+a {
+    color: #7e22ce;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+pre {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 8px;
+    color: #4c1d95;
+}</style>
+</head>
+
+<body>
+    
+    <form action="/submit.php">
+         <h1>ADITYA TRAVEL AGENCY</h1>
+        <div>
+            <label for="naruto">Name</label>
+            <input type="name" id="naruto" placeholder="Enter your name" required>
+        </div>
+        <div>
+            <label for="sasuke">Phone</label>
+            <input type="tel" id="sasuke" placeholder="Enter your Mobile no.">
+        </div>
+        <div>
+            <label for="luffy">Email</label>
+            <input type="email" id="luffy" placeholder="Enter your email">
+        </div>
+        <div>
+            <label for="ayush">Password</label>
+            <input type="password" id="ayush" placeholder="Enter your password" required>
+        </div>
+        <div>
+            <pre><b>Type of ticket</b></pre>
+            <input type="radio" id="normal" name="buu">
+            <label for="normal">Normal</label>
+
+            <input type="radio" id="1st class" name="buu">
+            <label for="1st class">1st Class</label>
+
+            <input type="radio" id="VIP" name="buu">
+            <label for="VIP">VIP</label>
+
+        </div>
+        <div>
+            <label for="gender" required>Gender</label>
+            <select name="" id="gender" required >
+                <option value="disabled selected">select your gender</option>
+                <option value="male" required>male</option>
+                <option value="female">female</option>
+                <option value="other">other</option>
+            </select>
+        </div>
+            <input type="checkbox" required id="chiku">
+            <label for="chiku">i accept all terms and <a href="The Ultimate HTML handbook.pdf"
+                target="blank">policy</a></label>
+        <div>
+            <label for="comment">comment</label>
+            <textarea name="" rows="4" id="comment"placeholder Enter your comments></textarea>
+        </div>
+        <div>
+            <button type="submit">submit</button>
+        </div>
+    </form>
+</body>
+
+</html>
